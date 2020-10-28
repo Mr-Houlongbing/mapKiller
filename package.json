@@ -1,0 +1,34 @@
+{
+	"name": "mapkiller",
+	"version": "1.0.0",
+	"description": "",
+	"main": "distSrc/app.js",
+	"scripts": {
+		"start": "ts-node src/app.ts",
+		"buildKiller": "electron-builder --win --x64"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/node": "^14.11.8",
+		"@types/node-xlsx": "^0.15.0",
+		"fs": "0.0.1-security",
+		"node-xlsx": "^0.15.0",
+		"pkg": "^4.4.9",
+		"typescript": "^4.0.3",
+		"util": "^0.12.3"
+	},
+	"build": {
+		"appId": "com.hou.mapKiller",
+		"copyright": "Yimi",
+		"productName": "MapKiller",
+		"dmg": {
+			"window": {
+				"x": 100,
+				"y": 100,
+				"width": 500,
+				"height": 400
+			}
+		}
+	}
+}
